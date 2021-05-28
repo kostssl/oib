@@ -60,6 +60,7 @@ TEMPLATE = """
 -a never,exit -F exe=/usr/sbin/cron
 -a never,exit -F exe=/lib/systemd/systemd-timesyncd
 -a never,exit -F exe=/lib/systemd/systemd-logind
+-a never,exit -F exe=/usr/sbin/zabbix_agentd
  
 # network activities
 -a always,exit -F arch=b32 -S socket -F a0=0x2 -k pt_siem_api_socket
