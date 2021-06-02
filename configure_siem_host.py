@@ -61,6 +61,16 @@ TEMPLATE = """
 -a never,exit -F exe=/lib/systemd/systemd-timesyncd
 -a never,exit -F exe=/lib/systemd/systemd-logind
 -a never,exit -F exe=/usr/sbin/zabbix_agentd
+-a never,exit -F exe=/sbin/xtables-legacy-multi
+-a never,exit -F exe=/usr/local/lib/erlang/erts-11.1.6/bin/beam.smp
+-a never,exit -F exe=/usr/local/lib/erlang/erts-11.1.7/bin/beam.smp
+-a never,exit -F exe=/usr/local/bin/node
+-a never,exit -F exe=/usr/bin/runc
+-a never,exit -F exe=/bin/dash
+-a never,exit -F exe=/usr/bin/docker-init
+-a never,exit -F exe=/usr/local/bin/python2.7
+-a never,exit -F exe=/usr/sbin/nginx
+-a never,exit -F exe=/usr/bin/head
  
 # network activities
 -a always,exit -F arch=b32 -S socket -F a0=0x2 -k pt_siem_api_socket
