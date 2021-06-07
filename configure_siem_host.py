@@ -69,6 +69,7 @@ TEMPLATE = """
 -a never,exit -F exe=/bin/dash
 -a never,exit -F exe=/usr/bin/docker-init
 -a never,exit -F exe=/usr/local/bin/python2.7
+-a never,exit -F exe=/usr/bin/python2.7
 -a never,exit -F exe=/usr/sbin/nginx
 -a never,exit -F exe=/usr/bin/head
  
